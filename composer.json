@@ -3,7 +3,7 @@
   "description" : "LosLog integration for Hermes",
   "require" : {
     "mt-olympus/hermes" : "~0.9",
-    "los/loslog" : "~2.0"
+    "los/loslog" : "~1.0"
   },
   "require-dev" : {
     "satooshi/php-coveralls" : "dev-master",
