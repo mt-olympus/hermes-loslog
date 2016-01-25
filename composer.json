@@ -3,15 +3,12 @@
   "description" : "LosLog integration for Hermes",
   "require" : {
     "mt-olympus/hermes" : "~0.9",
-    "los/loslog" : "~1.0",
-    "zendframework/zend-mvc" : "~2.6",
-    "zendframework/zend-modulemanager" : "~2.6",
-    "zendframework/zend-http" : "~2.5"
+    "los/loslog" : "~1.0"
   },
   "require-dev" : {
     "satooshi/php-coveralls" : "dev-master",
     "squizlabs/php_codesniffer" : "^2.3",
-    "phpunit/phpunit" : "~5.0"
+    "phpunit/phpunit" : "~4.8"
   },
   "license" : "MIT",
   "keywords" : [ "hermes", "los", "loslog", "zf2" ],
@@ -19,9 +16,7 @@
     "psr-4" : {
       "Hermes\\LosLog\\" : "src/"
     },
-    "classmap": [
-        "src/Module.php"
-    ]
+    "classmap" : [ "./" ]
   },
   "type" : "library",
   "config" : {
