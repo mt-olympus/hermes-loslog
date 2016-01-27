@@ -24,7 +24,7 @@ class Module implements AutoloaderProviderInterface
             $request = $e->getRequest();
 
             $config = $serviceLocator->get('Config');
-            $serviceName = $config['hermes']['service_name'] ?? '';
+            $serviceName = isset($config['hermes']['service_name']) ? $config['hermes']['service_name'] : '';
             $data = [
                 'direction' => 'in',
                 'status' => 'success',
@@ -55,7 +55,7 @@ class Module implements AutoloaderProviderInterface
             $request = $hermes->getZendClient()->getRequest();
 
             $config = $serviceLocator->get('Config');
-            $serviceName = $config['hermes']['service_name'] ?? '';
+            $serviceName = isset($config['hermes']['service_name']) ? $config['hermes']['service_name'] : '';
 
             $data = [
                 'direction' => 'out',
@@ -87,7 +87,7 @@ class Module implements AutoloaderProviderInterface
             $request = $hermes->getZendClient()->getRequest();
 
             $config = $serviceLocator->get('Config');
-            $serviceName = $config['hermes']['service_name'] ?? '';
+            $serviceName = isset($config['hermes']['service_name']) ? $config['hermes']['service_name'] : '';
 
             $data = [
                 'direction' => 'out',
